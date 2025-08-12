@@ -2,8 +2,9 @@ import './App.css'
 import Menu from './componentes/Menu.jsx';
 import Section from './componentes/Section.jsx';
 import Footer from './componentes/Footer.jsx';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import Card from './componentes/Card.jsx';
+import Banner from './componentes/Banner.jsx';
+
 
 
 function App() {
@@ -12,6 +13,8 @@ function App() {
   return (
     <>
       <Menu />
+      <Banner />
+      <Card />
       <Section />
       <Footer />
     </>
