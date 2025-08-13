@@ -1,5 +1,5 @@
 import './Banner.css'
-import banner5 from '/imagens/banner5.jpg'; // se estiver na pasta public/imagens
+import banner5 from '/imagens/banner5.jpg'; 
 
 export default function Banner() {
   return (
@@ -12,5 +12,7 @@ export default function Banner() {
     </div>
   );
 }
+
+
 
 
