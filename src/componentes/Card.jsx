@@ -62,3 +62,5 @@ function Card() {
 }
 
 export default Card;
+
+arrumar cards como botao
