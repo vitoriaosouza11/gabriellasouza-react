@@ -9,10 +9,10 @@ function Section() {
                         <div className="footer-column">
                             <h4 style={{ marginTop: '30px', color: 'white' }}>NAVEGUE PELO SITE</h4>
                             <ul>
-                                <li><a href="index.html">Início</a></li>
-                                <li><a href="facial.html">Procedimentos</a></li>
-                                <li><a href="sobre.html">Sobre</a></li>
-                                <li><a href="contato.html">Contato</a></li>
+                                <li><a href="index">Início</a></li>
+                                <li><a href="facial">Procedimentos</a></li>
+                                <li><a href="sobre">Sobre</a></li>
+                                <li><a href="contato">Contato</a></li>
                             </ul>
                         </div>
 
@@ -47,7 +47,7 @@ function Section() {
                         </div>
 
                         <div className="footer-logo">
-                            <img src="FOTOS/logo.jpg" style={{ width: '100px', height: '100px', borderRadius: '50%' }} alt="Logo" />
+                            <img src="../imagens/logo.jpg" style={{ width: '100px', height: '100px', borderRadius: '50%' }} alt="Logo" />
                             <p style={{ color: '#bb8a50', marginTop: '10px' }}>ESTÉTICA AVANÇADA E INTEGRATIVA</p>
                         </div>
                     </div>

@@ -89,6 +89,7 @@ function Epilacao() {
                     </div>
                 </div>
             </div>
+            <br></br>
         </>
     )
 }

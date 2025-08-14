@@ -8,7 +8,9 @@ import Facial from './pages/PaginaFacial.jsx';
 import Corporal from './pages/PaginaCorporal.jsx';
 import Epilacao from './pages/PaginaEpilacao.jsx';
 import Luz from './pages/PaginaLuz.jsx';
-
+import Layout from './pages/Layout.jsx';
+import Sobre from './pages/PaginaSobre.jsx';
+// import Contato from './pages/PaginaContato.jsx';
 
 
 function App() {
@@ -18,11 +20,15 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/facial" element={<Facial />} />
-          <Route path="/corporal" element={<Corporal />} />
-          <Route path="/epilacao" element={<Epilacao />} />
-          <Route path="/luz" element={<Luz />} />
+          <Route path="/" element={<Layout />} >
+            <Route index element={<Home />} />
+            <Route path="facial" element={<Facial />} />
+            <Route path="corporal" element={<Corporal />} />
+            <Route path="epilacao" element={<Epilacao />} />
+            <Route path="luz" element={<Luz />} />
+            <Route path="/sobre" element={<Sobre />} />
+            {/* <Route path="/contato" element={<Contato />} /> */}
+          </Route>
         </Routes>
       </BrowserRouter>
     </>

@@ -3,7 +3,7 @@ import Corporal from '../componentes/Corporal.jsx';
 function PaginaCorporal() {
   return (
     <>
-        <h2 style="text-align: center; color: #bb8a50;">TRATAMENTOS CORPORAIS</h2>
+        <h2 style={{textAlign: 'center', color: '#bb8a50'}}>TRATAMENTOS CORPORAIS</h2>
             <div className="container mt-4">
                 <div className="row g-4 justify-content-center">
                     <div className="col-6 col-md-4 col-lg-2 d-flex">

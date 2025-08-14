@@ -1,11 +1,12 @@
 import './Menu.css'
+import { Link } from "react-router-dom";
 
 function Menu() {
     return (
         <>
             <nav className="navbar navbar-expand-lg ">
                 <div className="container-fluid">
-                    <a className="navbar-brand" href="#">Gabriella Souza</a>
+                    <Link className="navbar-brand" to="/">Gabriella Souza</Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
@@ -14,23 +15,23 @@ function Menu() {
                         <ul className="navbar-nav">
                             <li className="nav-item"></li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="index.html">Início</a>
+                                    <Link className="nav-link" to="/">Início</Link>
                                 </li>
                                 <li className="nav-item dropdown">
-                                    <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">Procedimentos</a>
+                                    <Link className="nav-link dropdown-toggle" to="/" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">Procedimentos</Link>
                                     <ul className="dropdown-menu">
-                                        <li><a className="dropdown-item" href="facial.html">Facial</a></li>
-                                        <li><a className="dropdown-item" href="corporal.html">Corporal</a></li>
-                                        <li><a className="dropdown-item" href="epilacao.html">Epilação</a></li>
-                                        <li><a className="dropdown-item" href="luzpulsada.html">Luz Pulsada</a></li>
+                                        <li><Link className="dropdown-item" to="facial">Facial</Link></li>
+                                        <li><Link className="dropdown-item" to="corporal">Corporal</Link></li>
+                                        <li><Link className="dropdown-item" to="epilacao">Epilação</Link></li>
+                                        <li><Link className="dropdown-item" to="luzpulsada">Luz Pulsada</Link></li>
                                     </ul>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="sobre.html">Sobre</a>
+                                    <Link className="nav-link" to="sobre">Sobre</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="contato.html">Contato</a>
+                                    <Link className="nav-link" to="contato">Contato</Link>
                                 </li>
                         </ul>
                     </div>
