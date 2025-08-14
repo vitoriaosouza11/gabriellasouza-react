@@ -24,7 +24,7 @@ function Menu() {
                                         <li><Link className="dropdown-item" to="facial">Facial</Link></li>
                                         <li><Link className="dropdown-item" to="corporal">Corporal</Link></li>
                                         <li><Link className="dropdown-item" to="epilacao">Epilação</Link></li>
-                                        <li><Link className="dropdown-item" to="luzpulsada">Luz Pulsada</Link></li>
+                                        <li><Link className="dropdown-item" to="luz">Luz Pulsada</Link></li>
                                     </ul>
                                 </li>
                                 <li className="nav-item">

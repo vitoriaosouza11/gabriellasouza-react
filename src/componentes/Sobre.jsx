@@ -3,7 +3,7 @@ import './Sobre.css';
 function Sobre() {
     return (
         <>
-            <h1 style={{ "text-align": "center", color: "#bb8a50" }}>SOBRE MIM</h1>
+            <h1 style={{ textAlign: center, color: "#bb8a50" }}>SOBRE MIM</h1>
             <br></br>
 
             <div className="container">

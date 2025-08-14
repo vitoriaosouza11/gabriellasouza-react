@@ -1,6 +1,12 @@
 import './Corporal.css';
 
-function Corporal() {
+
+function Corporal({ link, imagem, titulo }) {
+    const navegarPara = (url) => {
+        window.location.href = url;
+    };
+
+
     return (
         <>
             <h2 style="text-align: center; color: #bb8a50;">TRATAMENTOS CORPORAIS</h2>

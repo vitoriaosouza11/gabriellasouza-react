@@ -10,7 +10,7 @@ import Epilacao from './pages/PaginaEpilacao.jsx';
 import Luz from './pages/PaginaLuz.jsx';
 import Layout from './pages/Layout.jsx';
 import Sobre from './pages/PaginaSobre.jsx';
-// import Contato from './pages/PaginaContato.jsx';
+import Contato from './pages/PaginaContato.jsx';
 
 
 function App() {
@@ -26,8 +26,8 @@ function App() {
             <Route path="corporal" element={<Corporal />} />
             <Route path="epilacao" element={<Epilacao />} />
             <Route path="luz" element={<Luz />} />
-            <Route path="/sobre" element={<Sobre />} />
-            {/* <Route path="/contato" element={<Contato />} /> */}
+            <Route path="sobre" element={<Sobre />} />
+            <Route path="/contato" element={<Contato />} />
           </Route>
         </Routes>
       </BrowserRouter>

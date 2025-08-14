@@ -107,7 +107,6 @@ function Luz() {
                     </div>
                 </div>
             </div>
-            <br></br>
         </>
     )
 }
