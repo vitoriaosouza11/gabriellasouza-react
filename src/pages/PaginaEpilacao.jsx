@@ -5,7 +5,7 @@ function PaginaEpilacao() {
         <>
             <br />
             <h2 style={{ textAlign: 'center', color: '#bb8a50' }}>EPILAÇÃO</h2>
-            <div className="container mt-4">
+            <div className="container mt-4" style={{margin:'60px auto'}}>
                 <div className="row g-4 justify-content-center">
 
                     <Epilacao imagem='/imagens/intima.jpg' titulo='Íntima' />

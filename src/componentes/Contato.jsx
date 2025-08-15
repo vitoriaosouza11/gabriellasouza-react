@@ -11,13 +11,13 @@ function Contato() {
     function enviarFormulario(event) {
         event.preventDefault();
 
-        if (!nome || !email || !telefone || !mensagem) {
+        if (!nome || !email || !telefone || !mensagem || !data) {
             alert("Por favor, preencha todos os campos.");
             return;
         }
 
         const numeroWhatsApp = "5519993344430";
-        const mensagemFinal = `Olá, meu nome é ${nome}. Gostaria de agendar o(os) seguintes procedimentos:\n\n${mensagem}\n\nData desejada: ${data}`;
+        const mensagemFinal = `Olá, meu nome é ${nome}.\n\nEmail: ${email}\nTelefone: ${telefone}\n\nGostaria de agendar o(s) seguinte(s) procedimento(s):\n${mensagem}\n\nData desejada: ${data}`;
         const url = "https://wa.me/" + numeroWhatsApp + "?text=" + encodeURIComponent(mensagemFinal);
 
         window.open(url, "_blank");
@@ -25,7 +25,7 @@ function Contato() {
 
     return (
         <>
-            <br></br>
+            <br />
             <h2 style={{ textAlign: "center", color: "#bb8a50" }}>FALE CONOSCO</h2>
             <div className="container mt-5 mb-5">
                 <form onSubmit={enviarFormulario}>
@@ -63,6 +63,17 @@ function Contato() {
                         />
                     </div>
                     <div className="mb-3">
+                        <label htmlFor="data" className="form-label">Data desejada</label>
+                        <input
+                            type="date"
+                            className="form-control"
+                            id="data"
+                            value={data}
+                            onChange={e => setData(e.target.value)}
+                            required
+                        />
+                    </div>
+                    <div className="mb-3">
                         <label htmlFor="mensagem" className="form-label">Mensagem</label>
                         <textarea
                             className="form-control"
@@ -73,17 +84,6 @@ function Contato() {
                             required
                         ></textarea>
                     </div>
-
-
-                    <label htmlFor="data" className="form-label">Data desejada</label>
-                    <input
-                        type="date"
-                        className="form-control"
-                        id="data"
-                        value={data}
-                        onChange={e => setData(e.target.value)}
-                    />
-                    <br></br>
                     <button
                         type="submit"
                         className="btn"

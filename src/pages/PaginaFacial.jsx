@@ -5,8 +5,9 @@ function PaginaFacial() {
         <>
             <br />
             <h2 style={{ textAlign: 'center', color: '#bb8a50' }}>TRATAMENTOS FACIAIS</h2>
-            <div className="container mt-4">
-                <div className="row g-4 justify-content-center">
+            <div className="container mt-4" style={{margin:'60px auto'}}>
+
+                <div className="row g-4 justify-content-center margin:60px">
 
                     <Facial imagem='/imagens/microagulhamento.jpg' titulo='Microagulhamento' />
                     <Facial imagem='/imagens/hidragloss.jpg' titulo='Hidragloss' />

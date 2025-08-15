@@ -85,32 +85,39 @@
 
 .navbar .navbar-collapse {
     background-color: #636060;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
-    border-radius: 70%;
+    box-shadow: none;
+    border-radius: 0; /* remove arredondamento exagerado */
     padding: 0;
     margin: 0;
 }
 
-@media (min-width: 992px) {
+/* Mobile: menu aberto com fundo de fora a fora */
+@media (max-width: 991px) {
     .navbar .navbar-collapse {
-        background-color: transparent;
-        box-shadow: none;
-        border-radius: 70%;
+        background-color: #636060;
+        width: 100%;       /* ocupa toda a largura */
+        padding: 1rem;     /* espaço interno para os links */
+        position: absolute; /* evita "quebra" de layout */
+        left: 0;
+        top: 100%;         /* logo abaixo da barra */
+        z-index: 999;      /* fica acima de tudo */
     }
 }
 
 
-  .container.mt-5.mb-5 {
+.container.mt-5.mb-5 {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-  }
+}
 
 
-  .container.mt-5.mb-5 form {
+.container.mt-5.mb-5 form {
     max-width: 600px;
     width: 100%;
-  }
+}
+
+
 

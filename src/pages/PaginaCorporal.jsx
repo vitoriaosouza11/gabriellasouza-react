@@ -5,7 +5,7 @@ function PaginaCorporal() {
         <>
             <br />
             <h2 style={{ textAlign: 'center', color: '#bb8a50' }}>TRATAMENTOS CORPORAIS</h2>
-            <div className="container mt-4">
+            <div className="container mt-4" style={{margin:'60px auto'}}>
                 <div className="row g-4 justify-content-center">
 
                     <Corporal imagem='/imagens/drenagemlinfatica.png' titulo='Drenagem linfática' />

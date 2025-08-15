@@ -5,7 +5,7 @@ function PaginaLuz() {
         <>
             <br />
             <h2 style={{ textAlign: 'center', color: '#bb8a50' }}>LUZ PULSADA</h2>
-            <div className="container mt-4">
+            <div className="container mt-4" style={{margin:'60px auto'}}>
                 <div className="row g-4 justify-content-center">
 
                     <Luz imagem='/imagens/luzrosto.jpg' titulo='Rosto' />
