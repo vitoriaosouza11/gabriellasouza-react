@@ -1,9 +1,7 @@
 import './Card.css';
 
 function Card({ link, imagem, descricao }) {
-    const navegarPara = (url) => {
-        window.location.href = url;
-    };
+
 
     return (
         <>

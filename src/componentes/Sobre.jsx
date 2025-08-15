@@ -3,10 +3,10 @@ import './Sobre.css';
 function Sobre() {
     return (
         <>
-            <h1 style={{ textAlign: center, color: "#bb8a50" }}>SOBRE MIM</h1>
+            <h1 style={{ textAlign: "center", color: "#bb8a50" }}>SOBRE MIM</h1>
             <br></br>
 
-            <div className="container">
+            <div className="container container-sobre"  >
                 <div className="texto">
                     <h1><strong>Olá! Meu nome é Gabriella Souza</strong></h1>
                     <p>

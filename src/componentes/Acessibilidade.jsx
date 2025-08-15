@@ -3,12 +3,10 @@ import './Acessibilidade.css';
 function Acessibilidade() {
     return (
         <>
-            <div vw="true" className="enabled">
-                <div vw-access-button="true" className="active"></div>
-                <div vw-plugin-wrapper="true">
-                    <div className="vw-plugin-top-wrapper"></div>
-                </div>
-            </div>
+            <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+            <script>
+                new window.VLibras.Widget('https://vlibras.gov.br/app');
+            </script>
         </>
     );
 }

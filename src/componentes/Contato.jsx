@@ -25,6 +25,7 @@ function Contato() {
 
     return (
         <>
+            <br></br>
             <h2 style={{ textAlign: "center", color: "#bb8a50" }}>FALE CONOSCO</h2>
             <div className="container mt-5 mb-5">
                 <form onSubmit={enviarFormulario}>
